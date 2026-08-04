@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl"><head><style id="qw-theme">:root {
+  --color-bg: #121218;
+  --color-text: #e4e4ed;
+  --color-navbar-bg: #1a1a24;
+  --color-bg-chat-view: #121218;
+  --color-bg-secondary: #1a1a24;
+  --color-bg-tertiary: #1e1e2a;
+  --color-bg-hover: #2a2a38;
+  --color-surface: #1e1e2a;
+  --color-surface-hover: #2a2a38;
+  --color-surface-active: #353546;
+  --color-border: #ffffff1f;
+  --color-border-light: #ffffff0f;
+  --color-border-strong: #3a3a4e;
+  --color-primary: #8575ff;
+  --color-primary-dark: #4200db;
+  --color-primary-light: #8575ff;
+  --color-primary-bg: color-mix(in srgb, #8575ff 15%, transparent);
+  --color-primary-hover-border: #4200db;
+  --color-nav-icon-active: #8575ff;
+  --color-nav-hover-border: #8575ff;
+  --color-primary-alpha-3: color-mix(in srgb, #8575ff 3%, transparent);
+  --color-primary-alpha-5: color-mix(in srgb, #8575ff 5%, transparent);
+  --color-primary-alpha-8: color-mix(in srgb, #8575ff 8%, transparent);
+  --color-primary-alpha-12: color-mix(in srgb, #8575ff 12%, transparent);
+  --color-primary-alpha-15: color-mix(in srgb, #8575ff 15%, transparent);
+  --color-primary-alpha-20: color-mix(in srgb, #8575ff 20%, transparent);
+  --color-primary-alpha-25: color-mix(in srgb, #8575ff 25%, transparent);
+  --color-primary-alpha-30: color-mix(in srgb, #8575ff 30%, transparent);
+  --color-primary-alpha-40: color-mix(in srgb, #8575ff 40%, transparent);
+  --color-primary-alpha-50: color-mix(in srgb, #8575ff 50%, transparent);
+  --color-primary-alpha-60: color-mix(in srgb, #8575ff 60%, transparent);
+  --color-primary-subtle: color-mix(in srgb, #8575ff 25%, transparent);
+  --color-primary-border: color-mix(in srgb, #8575ff 50%, transparent);
+  --color-focus-ring: color-mix(in srgb, #8575ff 60%, transparent);
+  --color-sidebar-hover: color-mix(in srgb, #8575ff 15%, transparent);
+  --block-hover-outline: 1px dashed color-mix(in srgb, #8575ff 50%, transparent);
+  --block-selected-outline: 1px solid #8575ff;
+  --block-selection-outline-offset: 2px;
+  --block-selected-halo: 0 0 8px color-mix(in srgb, #8575ff 40%, transparent);
+  --color-accent: #8575ff;
+  --color-accent-foreground: #8575ff;
+  --color-accent-dark: #4200db;
+  --color-accent-light: color-mix(in srgb, #8575ff 15%, transparent);
+  --color-accent-inverse: #fff;
+  --color-link: #8575ff;
+  --color-primary-gradient-end: color-mix(in srgb, #8575ff 35%, transparent);
+  --color-primary-bg-solid: #1a1530;
+  --color-user-bubble: #333843;
+  --color-user-bubble-text: #e4e4ed;
+  --color-text-secondary: #a0a0b4;
+  --color-text-tertiary: #8a8a9a;
+  --color-text-muted: #6e6e82;
+  --color-text-on-primary: #fff;
+  --color-success: #4ade80;
+  --color-success-dark: #00802f;
+  --color-success-light: #d9ffd6;
+  --color-success-hover: #005c26;
+  --color-success-bg: #1c2c22;
+  --color-success-border: #0e3d1c;
+  --color-success-foreground: #4ade80;
+  --color-success-dark-foreground: #00802f;
+  --color-success-text: #4ade80;
+  --color-error: #ff6b6b;
+  --color-error-dark: #db0000;
+  --color-error-light: #ffe0e0;
+  --color-error-hover: #3b1a24;
+  --color-error-bg: #3b1a24;
+  --color-error-border: #5e1a24;
+  --color-error-active-border: #db0000;
+  --color-error-foreground: #ff6b6b;
+  --color-error-dark-foreground: #db0000;
+  --color-error-inverse: #fff;
+  --color-error-text: #ff6b6b;
+  --color-warning: #fbbf24;
+  --color-warning-dark: #573a00;
+  --color-warning-light: #fffbbd;
+  --color-warning-hover: #db9200;
+  --color-warning-bg: #3d3520;
+  --color-warning-border: #5e4a1a;
+  --color-warning-foreground: #fbbf24;
+  --color-warning-dark-foreground: #573a00;
+  --color-warning-inverse: #573a00;
+  --color-surface-warning: #fffbbd;
+  --color-text-warning: #573a00;
+  --color-info: #60a5fa;
+  --color-info-dark: #006ce0;
+  --color-info-light: #d1f1ff;
+  --color-info-hover: #003b8f;
+  --color-info-bg: #1a2a42;
+  --color-info-border: #0f3d6e;
+  --color-info-foreground: #60a5fa;
+  --color-info-dark-foreground: #002a66;
+  --color-info-inverse: #fff;
+  --color-overlay: #000000b3;
+  --color-shadow: #0000004d;
+  --color-hover: #ffffff0d;
+  --color-tooltip-bg: #1e1e2af2;
+  --color-tooltip-text: #e4e4ed;
+  --color-voice-purple: #8575ff;
+  --color-voice-purple-dark: #4200db;
+  --color-voice-purple-light: #8575ff;
+  --color-voice-red: #ff6b6b;
+  --color-voice-red-dark: #db0000;
+  --color-voice-amber: #fbbf24;
+  --color-voice-purple-glow: #8575ff66;
+  --color-voice-red-glow: #db000066;
+  --font-sans: "Amazon Ember", "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "SF Mono", "Monaco", "Menlo", "Consolas", monospace;
+  --text-2xs: .5625rem;
+  --text-xs: .625rem;
+  --text-sm: .6875rem;
+  --text-base: .75rem;
+  --text-md: .8125rem;
+  --text-lg: .875rem;
+  --text-xl: 1rem;
+  --text-2xl: 1.125rem;
+  --text-3xl: 1.25rem;
+  --text-4xl: 1.5rem;
+  --text-5xl: 2rem;
+  --spacing-1: calc(.25rem * 1);
+  --spacing-1-5: calc(.25rem * 1.5);
+  --spacing-2: calc(.25rem * 2);
+  --spacing-3: calc(.25rem * 3);
+  --spacing-4: calc(.25rem * 4);
+  --spacing-5: calc(.25rem * 5);
+  --spacing-6: calc(.25rem * 6);
+  --spacing-7: calc(.25rem * 7);
+  --spacing-8: calc(.25rem * 8);
+  --spacing-9: calc(.25rem * 9);
+  --spacing-10: calc(.25rem * 10);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-card: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 8px;
+  --shadow-sm: 0 1px 2px #0003;
+  --shadow-md: 0 4px 12px #0000004d;
+  --color-success-bg-solid: #1a3d28;
+  --color-error-bg-solid: #4a2028;
+  --color-error-border-solid: #5e1a24;
+  --color-warning-bg-solid: #4a3a1e;
+  --color-warning-text: #fbbf24;
+  --color-info-bg-solid: #1a3050;
+  --color-info-bg-solid-alt: #222240;
+  --color-info-text: #60a5fa;
+  --color-info-text-alt: #818cf8;
+  --color-emerald: #34d399;
+  --color-teal: #5eead4;
+  --color-code-bg: #1e1e2a;
+  --color-code-header-bg: #252535;
+  --color-code-text: #e4e4ed;
+  --color-code-border: #2e2e3e;
+  --color-code-muted: #6e6e82;
+  --color-inline-code-bg: #1e1e2a;
+  --color-inline-code-text: #e4e4ed;
+  --color-inline-code-border: #2e2e3e;
+  --color-scrollbar-thumb: #3a3a4e;
+  --color-scrollbar-track: transparent;
+  --color-graph-node-text: #e4e4ed;
+  --color-graph-node-text-dim: #6e6e82;
+  --color-graph-edge-default: #6e6e82;
+  --color-graph-edge-cross: #f39c12;
+  --color-graph-edge-text: #a0a0b4;
+  --color-graph-edge-stroke: #1a1a24;
+  --color-graph-highlight-bg: #ff6b6b;
+  --color-graph-highlight-border: #e74c3c;
+  --color-graph-search-bg: gold;
+  --color-graph-search-border: orange;
+  --color-graph-focus-border: #f44;
+  --color-graph-external-border: #6e6e82;
+  --color-graph-cat-file: #5dade2;
+  --color-graph-cat-folder: #aab7b8;
+  --color-graph-cat-file-aggregate: #5499c7;
+  --color-graph-cat-class: #bb8fce;
+  --color-graph-cat-function: #58d68d;
+  --color-graph-cat-method: #48c9b0;
+  --color-graph-cat-variable: #f5b041;
+  --color-graph-cat-import: #eb984e;
+  --color-graph-cat-module: #7e8ce0;
+  --color-graph-cat-concept: #ec7063;
+  --color-graph-cat-person: #ff8a8a;
+  --color-graph-cat-org: #76d7c4;
+  --color-graph-cat-organization: #76d7c4;
+  --color-graph-cat-product: #b8b0fe;
+  --color-graph-cat-metric: #fea0c0;
+  --color-graph-cat-location: #7e9bb5;
+  --color-graph-cat-date: #f092c0;
+  --color-graph-cat-code: #5dade2;
+  --color-graph-cat-doc: #aab7b8;
+  --color-graph-cat-url: #45d6b5;
+  --color-graph-cat-email: #8e7cf7;
+  --color-graph-cat-unknown: #d5dbdb;
+  --color-graph-rel-contains: #d5dbdb;
+  --color-graph-rel-extends: #bb8fce;
+  --color-graph-rel-implements: #5dade2;
+  --color-graph-rel-imports: #eb984e;
+  --color-graph-rel-uses: #58d68d;
+  --color-graph-rel-calls: #52be80;
+  --color-graph-rel-references: #f5b041;
+  --color-graph-rel-related-to: #aab7b8;
+  --color-graph-rel-works-on: #ec7063;
+  --color-graph-rel-owns: #48c9b0;
+  --color-graph-rel-depends-on: #eb984e;
+  --color-graph-rel-parent-of: #d5dbdb;
+  --qs-content: #fff;
+  --qs-main: #fff;
+  --qs-primary-foreground: #131920;
+  --qs-secondary-foreground: #656871;
+  --qs-tertiary-foreground: #6e6e82;
+  --qs-placeholder-foreground: #8c8c94;
+  --qs-divider: #dedee3;
+  --qs-default-border: #8c8c94;
+  --qs-neutral-soft: #b4b4bb;
+  --qs-neutral-gray-50: #1e1e2a;
+  --qs-tertiary-background: #1e1e2a;
+  --qs-action-hover: #f3f3f7;
+  --qs-primary-default: #4200db;
+  --qs-primary-dark: #35009e;
+  --qs-primary-light: #e8e6ff;
+  --qs-success-default: #00802f;
+  --qs-error-default: #db0000;
+  --qs-font-sans: "Amazon Ember", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  --safe-top: 0px;
+  --safe-bottom: 0px;
+  --safe-left: 0px;
+  --safe-right: 0px;
+  --qs-font-family: "Amazon Ember", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  --qs-font-base-letter-spacing: .15px;
+  --qs-shadow-sm: 0 0 2px 0 #00000029, 0 0 4px 0 #00000029;
+  --qs-shadow-md: 0 0 2px 0 #00000029, 0 2px 8px 1px #00000029;
+  --qs-shadow-lg: 0 4px 16px 4px #00000029, 0 2px 6px 1px #00000029;
+  --qs-shadow-xl: 0 4px 8px 2px #00000029, 0 6px 20px 4px #00000029;
+  --qs-width-modal-sm: 384px;
+  --qs-width-modal-md: 600px;
+  --qs-width-modal-lg: 1136px;
+  --qs-grid-gap: 16px;
+  --qs-grid-gap-xl: 24px;
+  --qs-primary-medium: #8575ff;
+  --qs-primary-inverse: #fff;
+  --qs-neutral-lightest: #f9f9fb;
+  --qs-neutral-light: #f3f3f7;
+  --qs-neutral-default: #dedee3;
+  --qs-neutral-medium: #8c8c94;
+  --qs-neutral-deep: #656871;
+  --qs-neutral-dark: #333843;
+  --qs-neutral-strong: #131920;
+  --qs-neutral-white: #fff;
+  --qs-neutral-black: #000;
+  --qs-success-medium: #005c26;
+  --qs-success-dark: #00471e;
+  --qs-success-light: #d9ffd6;
+  --qs-success-inverse: #fff;
+  --qs-info-default: #006ce0;
+  --qs-info-medium: #003b8f;
+  --qs-info-dark: #002a66;
+  --qs-info-light: #d1f1ff;
+  --qs-info-inverse: #fff;
+  --qs-warning-default: #f2b100;
+  --qs-warning-medium: #db9200;
+  --qs-warning-dark: #573a00;
+  --qs-warning-light: #fffbbd;
+  --qs-warning-inverse: #573a00;
+  --qs-warning-experimental: #f2b100;
+  --qs-warning-experimental-light: #fffbbd;
+  --qs-warning-experimental-light-foreground: #fffbbd;
+  --qs-error-medium: #900;
+  --qs-error-dark: #700000;
+  --qs-error-light: #ffe0e0;
+  --qs-error-inverse: #fff;
+  --qs-connection-default: #db3300;
+  --qs-connection-soft: #ff997a;
+  --qs-connection-light: #ffe0d6;
+  --qs-connection-dark: #661800;
+  --qs-automation-default: #b3008f;
+  --qs-automation-medium: #d600ba;
+  --qs-automation-soft: #ff94f1;
+  --qs-automation-light: #ffe0fb;
+  --qs-automation-dark: #660052;
+  --qs-insight-default: #a000b8;
+  --qs-insight-soft: #f299ff;
+  --qs-insight-light: #fce6ff;
+  --qs-insight-dark: #590066;
+  --qs-visualization-default: #7300e5;
+  --qs-visualization-soft: #d4a8ff;
+  --qs-visualization-light: #f2e5ff;
+  --qs-visualization-dark: #45008a;
+  --qs-spice: #ff9800;
+  --qs-coachmark: #006ce0;
+  --qs-brand: #fff;
+  --qs-brand-foreground: #131920;
+  --qs-brand-navbar: #131920;
+  --qs-brand-navbar-foreground: #fff;
+  --qs-brand-navbar-light: #dedee3;
+  --qs-brand-navbar-dark: #000;
+  --qs-application-navbar: #4200db;
+  --qs-application-navbar-foreground: #fff;
+  --qs-application-navbar-light: #e8e6ff;
+  --qs-application-navbar-dark: #35009e;
+  --qs-dimension: #4200db;
+  --qs-dimension-foreground: #fff;
+  --qs-dimension-experimental: #4200db;
+  --qs-dimension-experimental-foreground: #4200db;
+  --qs-measure: #00802f;
+  --qs-measure-foreground: #fff;
+  --qs-measure-experimental: #f2b100;
+  --qs-measure-experimental-foreground: #f2b100;
+  --qs-content-inverse: #333843;
+  --qs-content-inverse-active: #131920;
+  --qs-secondary: #dedee3;
+  --qs-disabled: #8c8c94;
+  --qs-divider-light: #f3f3f7;
+  --qs-hover-border: #333843;
+  --qs-active-border: #4200db;
+  --qs-disabled-border: #dedee3;
+  --qs-error-border: #ffe0e0;
+  --qs-error-active-border: #db0000;
+  --qs-disabled-foreground: #b4b4bb;
+  --qs-primary-inverse-foreground: #fff;
+  --qs-error-foreground: #db0000;
+  --qs-contrast-foreground: #131920;
+  --qs-main-foreground: #131920;
+  --qs-main-secondary-foreground: #656871;
+  --qs-action-disabled: #f3f3f7;
+  --qs-action-active: #e8e6ff;
+  --qs-default-badge: #dedee3;
+  --qs-tag-default: #dedee3;
+  --qs-tag-soft-border: #b4b4bb;
+  --qs-focus-offset: 1px;
+  --qs-toggle-tile-sm: calc(.25rem * 8);
+  --qs-toggle-tile-md: calc(.25rem * 12);
+  --qs-toggle-tile-lg: calc(.25rem * 15);
+  --qs-shadow-pin-right: inset 4px 0 4px -4px #00000029;
+  --qs-shadow-pin-left: inset -4px 0 4px -4px #00000029;
+  --react-pdf-text-layer: 1;
+  --highlight-bg-color: #b400aa;
+  --highlight-selected-bg-color: #006400;
+  --react-pdf-annotation-layer: 1;
+  --annotation-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --input-focus-border-color: Highlight;
+  --input-focus-outline: 1px solid Canvas;
+  --input-unfocused-border-color: transparent;
+  --input-disabled-border-color: transparent;
+  --input-hover-border-color: black;
+  --link-outline: none;
+  color-scheme: dark;
+}
+body { background: var(--color-bg); color: var(--color-text); }
+a { color: var(--color-link, var(--color-primary)); }</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دفتر خیاطی - سیستم اندازه‌گیری مشتریان</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+            background: #f0f2f5;
+            color: #1a1a2e;
+            min-height: 100vh;
+            direction: rtl;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+        }
+        .header h1 {
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .header-actions {
+            display: flex;
+            gap: 8px;
+        }
+        .header-btn {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        .header-btn:hover { background: rgba(255,255,255,0.2); }
+        .header-btn i { margin-left: 6px; }
+
+        /* Main Layout */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Search Bar */
+        .search-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .search-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 15px;
+            direction: rtl;
+            transition: border-color 0.2s;
+        }
+        .search-input:focus { outline: none; border-color: #4361ee; }
+        .search-input::placeholder { color: #999; }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 0;
+            margin-bottom: 16px;
+        }
+        .tab {
+            flex: 1;
+            padding: 12px;
+            text-align: center;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            color: #666;
+            transition: all 0.2s;
+            border-bottom: 3px solid transparent;
+        }
+        .tab:first-child { border-radius: 0 12px 0 0; }
+        .tab:last-child { border-radius: 12px 0 0 0; }
+        .tab.active { color: #4361ee; border-bottom-color: #4361ee; background: #fff; }
+        .tab:hover { color: #4361ee; }
+
+        /* Form */
+        .form-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            display: none;
+        }
+        .form-section.active { display: block; }
+        .form-section h2 {
+            font-size: 16px;
+            margin-bottom: 16px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group.full-width { grid-column: 1 / -1; }
+        .form-group label {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            padding: 10px 12px;
+            border: 1.5px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            direction: rtl;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #4361ee;
+        }
+        .form-group textarea { resize: vertical; min-height: 60px; }
+
+        .btn-save {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #4361ee, #3a56d4);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 16px;
+            transition: transform 0.1s, box-shadow 0.2s;
+        }
+        .btn-save:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(67,97,238,0.3); }
+        .btn-save:active { transform: translateY(0); }
+
+        /* Customer List */
+        .list-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            display: none;
+        }
+        .list-section.active { display: block; }
+        .customer-count {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+        .customer-card {
+            border: 1.5px solid #eee;
+            border-radius: 10px;
+            padding: 14px;
+            margin-bottom: 10px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+        .customer-card:hover { border-color: #4361ee; box-shadow: 0 2px 8px rgba(67,97,238,0.1); }
+        .customer-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .customer-name {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+        .customer-phone {
+            font-size: 13px;
+            color: #666;
+            direction: ltr;
+        }
+        .customer-meta {
+            display: flex;
+            gap: 12px;
+            font-size: 12px;
+            color: #888;
+            flex-wrap: wrap;
+        }
+        .customer-meta span { display: flex; align-items: center; gap: 4px; }
+
+        /* Detail Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .modal-overlay.active { display: flex; }
+        .modal {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            width: 100%;
+            max-width: 500px;
+            max-height: 80vh;
+            overflow-y: auto;
+            direction: rtl;
+        }
+        .modal h2 {
+            font-size: 18px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: #666;
+            padding: 4px 8px;
+        }
+        .modal-close:hover { color: #e94560; }
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .detail-item {
+            background: #f7f8fc;
+            border-radius: 8px;
+            padding: 10px 12px;
+        }
+        .detail-item label { font-size: 11px; color: #888; display: block; }
+        .detail-item span { font-size: 15px; font-weight: 600; color: #1a1a2e; }
+        .detail-notes {
+            margin-top: 12px;
+            padding: 12px;
+            background: #fffbeb;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #666;
+        }
+        .modal-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+        }
+        .btn-delete {
+            flex: 1;
+            padding: 10px;
+            background: #fee2e2;
+            color: #dc2626;
+            border: none;
+            border-radius: 8px;
+            font-size: 13px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .btn-delete:hover { background: #fca5a5; }
+        .btn-edit {
+            flex: 1;
+            padding: 10px;
+            background: #e0e7ff;
+            color: #4361ee;
+            border: none;
+            border-radius: 8px;
+            font-size: 13px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .btn-edit:hover { background: #c7d2fe; }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: #999;
+        }
+        .empty-state i { font-size: 40px; margin-bottom: 12px; color: #ddd; }
+        .empty-state p { font-size: 14px; }
+
+        /* Toast */
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: #1a1a2e;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            z-index: 9999;
+            transition: transform 0.3s ease;
+        }
+        .toast.show { transform: translateX(-50%) translateY(0); }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .form-grid { grid-template-columns: 1fr; }
+            .detail-grid { grid-template-columns: 1fr; }
+            .header h1 { font-size: 16px; }
+            .container { padding: 12px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1><i class="fa-solid fa-scissors"></i> دفتر خیاطی</h1>
+    <div class="header-actions">
+        <button class="header-btn" onclick="exportData()"><i class="fa-solid fa-download"></i> بکاپ</button>
+        <button class="header-btn" onclick="document.getElementById('importFile').click()"><i class="fa-solid fa-upload"></i> بازیابی</button>
+        <input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)">
+    </div>
+</div>
+
+<div class="container">
+    <!-- Search -->
+    <div class="search-section">
+        <input type="text" class="search-input" id="searchInput" placeholder="🔍 جستجو با نام یا شماره تلیفون..." oninput="searchCustomers()">
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button class="tab active" onclick="switchTab('list')"><i class="fa-solid fa-users"></i> مشتریان</button>
+        <button class="tab" onclick="switchTab('form')"><i class="fa-solid fa-plus"></i> مشتری جدید</button>
+    </div>
+
+    <!-- Add Customer Form -->
+    <div class="form-section" id="formTab">
+        <h2><i class="fa-solid fa-user-plus"></i> ثبت مشتری جدید</h2>
+        <form id="customerForm" onsubmit="saveCustomer(event)">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>نام مشتری *</label>
+                    <input type="text" id="name" required="" placeholder="نام کامل">
+                </div>
+                <div class="form-group">
+                    <label>شماره تلیفون *</label>
+                    <input type="tel" id="phone" required="" placeholder="۰۷۰۰۰۰۰۰۰۰" dir="ltr">
+                </div>
+                <div class="form-group">
+                    <label>نوع لباس</label>
+                    <select id="clothingType">
+                        <option value="پیراهن">پیراهن</option>
+                        <option value="شلوار">شلوار</option>
+                        <option value="واسکت">واسکت</option>
+                        <option value="کت">کت</option>
+                        <option value="پتلون">پتلون</option>
+                        <option value="کامل">لباس کامل</option>
+                        <option value="دیگر">دیگر</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>تاریخ</label>
+                    <input type="date" id="date">
+                </div>
+            </div>
+
+            <h2 style="margin-top: 20px;"><i class="fa-solid fa-ruler"></i> اندازه‌ها (سانتی‌متر)</h2>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>قد (بلندی)</label>
+                    <input type="number" id="height" placeholder="سانتی‌متر">
+                </div>
+                <div class="form-group">
+                    <label>سینه (دور سینه)</label>
+                    <input type="number" id="chest" placeholder="سانتی‌متر">
+                </div>
+                <div class="form-group">
+                    <label>شانه</label>
+                    <input type="number" id="shoulder" placeholder="سانتی‌متر">
+                </div>
+                <div class="form-group">
+                    <label>کمر (دور کمر)</label>
+                    <input type="number" id="waist" placeholder="سانتی‌متر">
+                </div>
+                <div class="form-group">
+                    <label>آستین (طول آستین)</label>
+                    <input type="number" id="sleeve" placeholder="سانتی‌متر">
+                </div>
+                <div class="form-group">
+                    <label>یخن (دور یخن)</label>
+                    <input type="number" id="collar" placeholder="سانتی‌متر">
+                </div>
+                <div class="form-group">
+                    <label>پاچه (طول پاچه)</label>
+                    <input type="number" id="inseam" placeholder="سانتی‌متر">
+                </div>
+                <div class="form-group">
+                    <label>باسن (دور باسن)</label>
+                    <input type="number" id="hip" placeholder="سانتی‌متر">
+                </div>
+                <div class="form-group full-width">
+                    <label>یادداشت</label>
+                    <textarea id="notes" placeholder="توضیحات اضافی..."></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn-save"><i class="fa-solid fa-check"></i> ذخیره مشتری</button>
+        </form>
+    </div>
+
+    <!-- Customer List -->
+    <div class="list-section active" id="listTab">
+        <div class="customer-count" id="customerCount"></div>
+        <div id="customerList"></div>
+    </div>
+</div>
+
+<!-- Detail Modal -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+    <div class="modal" id="modalContent" onclick="event.stopPropagation()">
+        <h2>
+            <span id="modalTitle"></span>
+            <button class="modal-close" onclick="closeModal()">✕</button>
+        </h2>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script>
+    // ============ DATA STORE ============
+    const STORAGE_KEY = 'tailor_customers';
+
+    function getCustomers() {
+        try {
+            return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+        } catch(e) {
+            return [];
+        }
+    }
+
+    function saveCustomers(customers) {
+        try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(customers));
+        } catch(e) {
+            showToast('خطا در ذخیره اطلاعات!');
+        }
+    }
+
+    // ============ SAVE CUSTOMER ============
+    function saveCustomer(e) {
+        e.preventDefault();
+        const customer = {
+            id: Date.now(),
+            name: document.getElementById('name').value.trim(),
+            phone: document.getElementById('phone').value.trim(),
+            clothingType: document.getElementById('clothingType').value,
+            date: document.getElementById('date').value || new Date().toISOString().split('T')[0],
+            height: document.getElementById('height').value,
+            chest: document.getElementById('chest').value,
+            shoulder: document.getElementById('shoulder').value,
+            waist: document.getElementById('waist').value,
+            sleeve: document.getElementById('sleeve').value,
+            collar: document.getElementById('collar').value,
+            inseam: document.getElementById('inseam').value,
+            hip: document.getElementById('hip').value,
+            notes: document.getElementById('notes').value.trim()
+        };
+
+        const customers = getCustomers();
+        customers.unshift(customer);
+        saveCustomers(customers);
+
+        document.getElementById('customerForm').reset();
+        document.getElementById('date').value = new Date().toISOString().split('T')[0];
+        showToast('✅ مشتری با موفقیت ذخیره شد!');
+        switchTab('list');
+        renderCustomers();
+    }
+
+    // ============ RENDER LIST ============
+    function renderCustomers(filter = '') {
+        const customers = getCustomers();
+        const listEl = document.getElementById('customerList');
+        const countEl = document.getElementById('customerCount');
+
+        let filtered = customers;
+        if (filter) {
+            const term = filter.toLowerCase();
+            filtered = customers.filter(c =>
+                c.name.toLowerCase().includes(term) ||
+                c.phone.includes(term)
+            );
+        }
+
+        countEl.textContent = `مجموع: ${filtered.length} مشتری`;
+
+        if (filtered.length === 0) {
+            listEl.innerHTML = `
+                <div class="empty-state">
+                    <i class="fa-solid fa-user-slash"></i>
+                    <p>${filter ? 'هیچ نتیجه‌ای پیدا نشد' : 'هنوز مشتری ثبت نشده است'}</p>
+                </div>`;
+            return;
+        }
+
+        listEl.innerHTML = filtered.map(c => `
+            <div class="customer-card" onclick="showDetail(${c.id})">
+                <div class="customer-card-header">
+                    <span class="customer-name"><i class="fa-solid fa-user"></i> ${c.name}</span>
+                    <span class="customer-phone">${c.phone}</span>
+                </div>
+                <div class="customer-meta">
+                    <span><i class="fa-solid fa-shirt"></i> ${c.clothingType}</span>
+                    <span><i class="fa-solid fa-calendar"></i> ${c.date}</span>
+                    ${c.chest ? `<span><i class="fa-solid fa-ruler"></i> سینه: ${c.chest}</span>` : ''}
+                </div>
+            </div>
+        `).join('');
+    }
+
+    // ============ DETAIL VIEW ============
+    function showDetail(id) {
+        const customers = getCustomers();
+        const c = customers.find(x => x.id === id);
+        if (!c) return;
+
+        document.getElementById('modalTitle').textContent = c.name;
+        
+        const measurements = [
+            { label: 'شماره تلیفون', value: c.phone },
+            { label: 'نوع لباس', value: c.clothingType },
+            { label: 'تاریخ', value: c.date },
+            { label: 'قد (بلندی)', value: c.height },
+            { label: 'سینه', value: c.chest },
+            { label: 'شانه', value: c.shoulder },
+            { label: 'کمر', value: c.waist },
+            { label: 'آستین', value: c.sleeve },
+            { label: 'یخن', value: c.collar },
+            { label: 'پاچه', value: c.inseam },
+            { label: 'باسن', value: c.hip },
+        ].filter(m => m.value);
+
+        let html = '<div class="detail-grid">';
+        html += measurements.map(m => `
+            <div class="detail-item">
+                <label>${m.label}</label>
+                <span>${m.value}</span>
+            </div>
+        `).join('');
+        html += '</div>';
+
+        if (c.notes) {
+            html += `<div class="detail-notes"><strong>یادداشت:</strong> ${c.notes}</div>`;
+        }
+
+        html += `
+            <div class="modal-actions">
+                <button class="btn-edit" onclick="editCustomer(${c.id})"><i class="fa-solid fa-pen"></i> ویرایش</button>
+                <button class="btn-delete" onclick="deleteCustomer(${c.id})"><i class="fa-solid fa-trash"></i> حذف</button>
+            </div>`;
+
+        document.getElementById('modalBody').innerHTML = html;
+        document.getElementById('modalOverlay').classList.add('active');
+    }
+
+    function closeModal(e) {
+        if (!e || e.target === document.getElementById('modalOverlay')) {
+            document.getElementById('modalOverlay').classList.remove('active');
+        }
+    }
+
+    // ============ DELETE ============
+    function deleteCustomer(id) {
+        if (!confirm('آیا مطمئن هستید که می‌خواهید این مشتری را حذف کنید؟')) return;
+        let customers = getCustomers();
+        customers = customers.filter(c => c.id !== id);
+        saveCustomers(customers);
+        closeModal();
+        renderCustomers(document.getElementById('searchInput').value);
+        showToast('🗑️ مشتری حذف شد');
+    }
+
+    // ============ EDIT ============
+    function editCustomer(id) {
+        const customers = getCustomers();
+        const c = customers.find(x => x.id === id);
+        if (!c) return;
+
+        closeModal();
+        switchTab('form');
+
+        document.getElementById('name').value = c.name;
+        document.getElementById('phone').value = c.phone;
+        document.getElementById('clothingType').value = c.clothingType;
+        document.getElementById('date').value = c.date;
+        document.getElementById('height').value = c.height || '';
+        document.getElementById('chest').value = c.chest || '';
+        document.getElementById('shoulder').value = c.shoulder || '';
+        document.getElementById('waist').value = c.waist || '';
+        document.getElementById('sleeve').value = c.sleeve || '';
+        document.getElementById('collar').value = c.collar || '';
+        document.getElementById('inseam').value = c.inseam || '';
+        document.getElementById('hip').value = c.hip || '';
+        document.getElementById('notes').value = c.notes || '';
+
+        // Delete old entry, new one will be created on save
+        let updated = customers.filter(x => x.id !== id);
+        saveCustomers(updated);
+    }
+
+    // ============ SEARCH ============
+    function searchCustomers() {
+        const term = document.getElementById('searchInput').value.trim();
+        renderCustomers(term);
+    }
+
+    // ============ TABS ============
+    function switchTab(tab) {
+        document.querySelectorAll('.tab').forEach((t, i) => {
+            t.classList.toggle('active', (tab === 'list' && i === 0) || (tab === 'form' && i === 1));
+        });
+        document.getElementById('listTab').classList.toggle('active', tab === 'list');
+        document.getElementById('formTab').classList.toggle('active', tab === 'form');
+    }
+
+    // ============ EXPORT/IMPORT ============
+    function exportData() {
+        const customers = getCustomers();
+        if (customers.length === 0) {
+            showToast('هیچ اطلاعاتی برای بکاپ وجود ندارد');
+            return;
+        }
+        const blob = new Blob([JSON.stringify(customers, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `tailor_backup_${new Date().toISOString().split('T')[0]}.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+        showToast('✅ بکاپ دانلود شد');
+    }
+
+    function importData(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            try {
+                const data = JSON.parse(e.target.result);
+                if (Array.isArray(data)) {
+                    const existing = getCustomers();
+                    const merged = [...data, ...existing];
+                    // Remove duplicates by id
+                    const unique = [...new Map(merged.map(c => [c.id, c])).values()];
+                    saveCustomers(unique);
+                    renderCustomers();
+                    showToast(`✅ ${data.length} مشتری بازیابی شد`);
+                } else {
+                    showToast('❌ فایل نامعتبر است');
+                }
+            } catch(err) {
+                showToast('❌ خطا در خواندن فایل');
+            }
+        };
+        reader.readAsText(file);
+        event.target.value = '';
+    }
+
+    // ============ TOAST ============
+    function showToast(msg) {
+        const toast = document.getElementById('toast');
+        toast.textContent = msg;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2500);
+    }
+
+    // ============ INIT ============
+    document.getElementById('date').value = new Date().toISOString().split('T')[0];
+    renderCustomers();
+</script>
+
+
+</body></html>
